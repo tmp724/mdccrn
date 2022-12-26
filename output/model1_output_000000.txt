@@ -1,0 +1,70 @@
+species:
+A  B  C
+
+reaction rates:
+ka  kd
+
+reactions:
+r0 = -C*kd+B*ka*A
+
+time derivatives:
+d/dt A = C*kd-B*ka*A
+d/dt B = C*kd-B*ka*A
+d/dt C = -C*kd+B*ka*A
+
+Jacobian with respect to the species:
+-B*ka	-ka*A	kd
+-B*ka	-ka*A	kd
+B*ka	ka*A	-kd
+
+Jacobian with respect to the reaction rates:
+-B*A	C
+-B*A	C
+B*A	-C
+
+Transformation matrix:
+1	0	0
+1	0	1
+0	1	1
+
+Inverse Transformation matrix:
+1	0	0
+1	-1	1
+-1	1	0
+
+Species in the new coordinates:
+A  C+A  B+C
+
+Jacobian with respect to the species in the new coordinates:
+-B*ka	-ka*A	kd
+0	0	0
+0	0	0
+
+Jacobian with respect to the reaction rates in the new coordinates:
+-B*A	C
+0	0
+0	0
+
+Signs of the entries of the Jacobian with respect to the species in the new coordinates:
+-1	-1	1
+0	0	0
+0	0	0
+
+Signs of the entries of the Jacobian with respect to the reaction rates in the new coordinates:
+-1	1
+0	0
+0	0
+
+Graph matrix:
+	A	C+A	B+C	ka	kd
+A	0	-1	1	-1	1
+C+A	0	0	0	0	0
+B+C	0	0	0	0	0
+
+Matrix of the signs of all paths between two nodes
+	A	C+A	B+C	ka	kd
+A	0	-1	1	-1	1
+C+A	0	0	0	0	0
+B+C	0	0	0	0	0
+
+

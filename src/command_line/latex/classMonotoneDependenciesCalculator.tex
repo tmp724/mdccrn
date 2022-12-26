@@ -1,0 +1,81 @@
+\hypertarget{classMonotoneDependenciesCalculator}{}\section{Monotone\+Dependencies\+Calculator Class Reference}
+\label{classMonotoneDependenciesCalculator}\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+
+
+{\ttfamily \#include $<$monotonedependenciescalculator.\+hpp$>$}
+
+
+
+Collaboration diagram for Monotone\+Dependencies\+Calculator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classMonotoneDependenciesCalculator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMonotoneDependenciesCalculator_ad34f416980b165442b9b80b75d9589db}{Monotone\+Dependencies\+Calculator}} (const \mbox{\hyperlink{classCRN}{C\+RN}} \&crn, const size\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMonotoneDependenciesCalculator_addefd7e4a175dc984f466ab59f9827b6}{run}} ()
+\begin{DoxyCompactList}\small\item\em calculates monoticity dependencies on the crn \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMonotoneDependenciesCalculator_ab848f6a0f7330fb11e18f13554a82152}{log}} (const std\+::string dirname) const
+\begin{DoxyCompactList}\small\item\em logs all output \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classMonotoneDependenciesCalculator_ad44fd409a7a8d83d8c902cb2edb63ef6}{number\+\_\+leading\+\_\+zeros}} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMonotoneDependenciesCalculator_ad34f416980b165442b9b80b75d9589db}\label{classMonotoneDependenciesCalculator_ad34f416980b165442b9b80b75d9589db}} 
+\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}!Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}!Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+\subsubsection{\texorpdfstring{Monotone\+Dependencies\+Calculator()}{MonotoneDependenciesCalculator()}}
+{\footnotesize\ttfamily Monotone\+Dependencies\+Calculator\+::\+Monotone\+Dependencies\+Calculator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCRN}{C\+RN}} \&}]{crn,  }\item[{const size\+\_\+t}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonotoneDependenciesCalculator_ab848f6a0f7330fb11e18f13554a82152}\label{classMonotoneDependenciesCalculator_ab848f6a0f7330fb11e18f13554a82152}} 
+\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}!log@{log}}
+\index{log@{log}!Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Monotone\+Dependencies\+Calculator\+::log (\begin{DoxyParamCaption}\item[{const std\+::string}]{dirname }\end{DoxyParamCaption}) const}
+
+
+
+logs all output 
+
+logs all output into the given dir; the output files will be characterized by the given model name \mbox{\Hypertarget{classMonotoneDependenciesCalculator_addefd7e4a175dc984f466ab59f9827b6}\label{classMonotoneDependenciesCalculator_addefd7e4a175dc984f466ab59f9827b6}} 
+\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}!run@{run}}
+\index{run@{run}!Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Monotone\+Dependencies\+Calculator\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates monoticity dependencies on the crn 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMonotoneDependenciesCalculator_ad44fd409a7a8d83d8c902cb2edb63ef6}\label{classMonotoneDependenciesCalculator_ad44fd409a7a8d83d8c902cb2edb63ef6}} 
+\index{Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}!number\+\_\+leading\+\_\+zeros@{number\+\_\+leading\+\_\+zeros}}
+\index{number\+\_\+leading\+\_\+zeros@{number\+\_\+leading\+\_\+zeros}!Monotone\+Dependencies\+Calculator@{Monotone\+Dependencies\+Calculator}}
+\subsubsection{\texorpdfstring{number\+\_\+leading\+\_\+zeros}{number\_leading\_zeros}}
+{\footnotesize\ttfamily size\+\_\+t Monotone\+Dependencies\+Calculator\+::number\+\_\+leading\+\_\+zeros = 5}
+
+the output comprises of graph and data files with the naming convention as follows\+: graph files\+: $<$modelname$>$\+\_\+graph\+\_\+$<$number\+\_\+leading\+\_\+zeros zeros$>$$<$incrementing number of output, starting from zero$>$.dot data files\+: $<$modelname$>$\+\_\+output\+\_\+$<$number\+\_\+leading\+\_\+zeros zeros$>$$<$incrementing number of output, starting from zero$>$.txt 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{monotonedependenciescalculator_8hpp}{monotonedependenciescalculator.\+hpp}}\item 
+\mbox{\hyperlink{monotonedependenciescalculator_8cpp}{monotonedependenciescalculator.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+digraph model1{
+
+node [shape=ellipse]; "C+A"; "B+C"; "B+C+A"; 
+
+"B+C+A" -> "C+A" [label="-"];
+"B+C+A" -> "B+C" [label="-"];
+
+node [shape=box]; "ka";"kd";
+
+"kd" -> "B+C+A" [label="-"];
+
+label = "model1";
+fontsize=20;
+}
+

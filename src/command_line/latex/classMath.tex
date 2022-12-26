@@ -1,0 +1,63 @@
+\hypertarget{classMath}{}\section{Math Class Reference}
+\label{classMath}\index{Math@{Math}}
+
+
+{\ttfamily \#include $<$math.\+hpp$>$}
+
+
+
+Collaboration diagram for Math\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classMath__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Gi\+Na\+C\+::matrix \mbox{\hyperlink{classMath_ab5ce1f51bb8c302d966581c9a77f1d66}{jacobian}} (const std\+::vector$<$ Gi\+Na\+C\+::ex $>$ \&functions, const std\+::vector$<$ Gi\+Na\+C\+::symbol $>$ \&variables)
+\begin{DoxyCompactList}\small\item\em calculates the jacobian matrix of given sets of functions and variables \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classMath_a59af3c9e62ca5318cc7cbb4de4d53709}{binary\+\_\+matrix}} (size\+\_\+t number\+\_\+rows)
+\begin{DoxyCompactList}\small\item\em returns a matrix of 0s and 1s \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classMath_a98e10539ebd03ed6705aee8e184da32b}{calculate\+\_\+determinant}} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&m, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em calculates the determinant of a matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMath_a59af3c9e62ca5318cc7cbb4de4d53709}\label{classMath_a59af3c9e62ca5318cc7cbb4de4d53709}} 
+\index{Math@{Math}!binary\+\_\+matrix@{binary\+\_\+matrix}}
+\index{binary\+\_\+matrix@{binary\+\_\+matrix}!Math@{Math}}
+\subsubsection{\texorpdfstring{binary\+\_\+matrix()}{binary\_matrix()}}
+{\footnotesize\ttfamily static std\+::vector$<$std\+::vector$<$int$>$ $>$ Math\+::binary\+\_\+matrix (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{number\+\_\+rows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+returns a matrix of 0s and 1s 
+
+takes a number and returns a matrix with size 2$^\wedge$number-\/1 where each column represents a unique binary number within the range of 1 to 2$^\wedge$number \mbox{\Hypertarget{classMath_a98e10539ebd03ed6705aee8e184da32b}\label{classMath_a98e10539ebd03ed6705aee8e184da32b}} 
+\index{Math@{Math}!calculate\+\_\+determinant@{calculate\+\_\+determinant}}
+\index{calculate\+\_\+determinant@{calculate\+\_\+determinant}!Math@{Math}}
+\subsubsection{\texorpdfstring{calculate\+\_\+determinant()}{calculate\_determinant()}}
+{\footnotesize\ttfamily static int Math\+::calculate\+\_\+determinant (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{m,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculates the determinant of a matrix 
+
+returns the determinant of a given square matrix of given size. The chosen algorithm is rather efficient, but for now only works for matrices with size 1-\/10. \mbox{\Hypertarget{classMath_ab5ce1f51bb8c302d966581c9a77f1d66}\label{classMath_ab5ce1f51bb8c302d966581c9a77f1d66}} 
+\index{Math@{Math}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!Math@{Math}}
+\subsubsection{\texorpdfstring{jacobian()}{jacobian()}}
+{\footnotesize\ttfamily static Gi\+Na\+C\+::matrix Math\+::jacobian (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Gi\+Na\+C\+::ex $>$ \&}]{functions,  }\item[{const std\+::vector$<$ Gi\+Na\+C\+::symbol $>$ \&}]{variables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculates the jacobian matrix of given sets of functions and variables 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{math_8hpp}{math.\+hpp}}\end{DoxyCompactItemize}

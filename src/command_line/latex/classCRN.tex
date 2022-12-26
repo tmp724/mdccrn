@@ -1,0 +1,265 @@
+\hypertarget{classCRN}{}\section{C\+RN Class Reference}
+\label{classCRN}\index{C\+RN@{C\+RN}}
+
+
+{\ttfamily \#include $<$crn.\+hpp$>$}
+
+
+
+Collaboration diagram for C\+RN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classCRN__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCRN_acea074d74a2269357d14c6f667649293}{C\+RN}} (const std\+::string \&\mbox{\hyperlink{classCRN_a4ef4514e0ffba7b9358b37636a7f7fb4}{filename}}, const std\+::string \&\mbox{\hyperlink{classCRN_a9ab0e43893870c6961fd0febafc99161}{model\+\_\+name}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCRN_a9ea712620fa755231213a59e4da33521}{print\+\_\+rr}} () const
+\begin{DoxyCompactList}\small\item\em prints all reaction rates to stdout \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCRN_a04e77ebd0aab58d87a87555a308c9191}{print\+\_\+s}} () const
+\begin{DoxyCompactList}\small\item\em prints all species to stdout \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCRN_a793a9a8490b0864d765b4ce87a3e3f35}{print\+\_\+r}} () const
+\begin{DoxyCompactList}\small\item\em prints all reactions to stdout \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCRN_a122e6176bc12186e3d90c6d84cd6ce0c}{print\+\_\+all}} () const
+\begin{DoxyCompactList}\small\item\em prints raction rates, species, reactions and the stoichiometric matrix to stdout \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classCRN_a4ef4514e0ffba7b9358b37636a7f7fb4}{filename}}
+\begin{DoxyCompactList}\small\item\em name of the file containing all input information \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classCRN_a9ab0e43893870c6961fd0febafc99161}{model\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em name of the crn model \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classCRN_adb477d36059362ab2aa130af967275df}{number\+\_\+reaction\+\_\+rates}} = 0
+\begin{DoxyCompactList}\small\item\em number of reaction rates \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classCRN_adbbcfed60a730f7d476678e3f0b2a843}{number\+\_\+species}} = 0
+\begin{DoxyCompactList}\small\item\em number of species \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classCRN_a3f77c4dcba31c3889bbb4635ef423940}{number\+\_\+reactions}} = 0
+\begin{DoxyCompactList}\small\item\em number of reactions \end{DoxyCompactList}\item 
+std\+::vector$<$ Gi\+Na\+C\+::symbol $>$ \mbox{\hyperlink{classCRN_af6de0bba7b97843f9c95e4e849fa9543}{reaction\+\_\+rate\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em list of all reaction rates \end{DoxyCompactList}\item 
+std\+::vector$<$ Gi\+Na\+C\+::symbol $>$ \mbox{\hyperlink{classCRN_ab1e7f09d6d0cf644190d36f14e689f49}{species\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em list of all species \end{DoxyCompactList}\item 
+std\+::vector$<$ Gi\+Na\+C\+::ex $>$ \mbox{\hyperlink{classCRN_a3c02ee72c45eabb20591e0556e0b611e}{reaction\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em list of all reactions \end{DoxyCompactList}\item 
+Gi\+Na\+C\+::matrix \mbox{\hyperlink{classCRN_a2fc9c358b31175f36e569bebcf6809b5}{stoichiometric}}
+\begin{DoxyCompactList}\small\item\em stoichiometric matrix of the crn \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCRN_a90756566693c70e08991c37c3ec21d38}{reaction\+\_\+rates\+\_\+signal}} = \char`\"{}reaction rates start\char`\"{}
+\begin{DoxyCompactList}\small\item\em string in input file that signals that the parsing of reaction rates starts in the next line \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCRN_a47d1cac1fe4387b2b643ef2c6b6f5617}{species\+\_\+signal}} = \char`\"{}species start\char`\"{}
+\begin{DoxyCompactList}\small\item\em string in input file that signals that the parsing of species starts in the next line \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCRN_aa71d714d674ed916e9acc03b7c6163ef}{reactions\+\_\+signal}} = \char`\"{}reactions start\char`\"{}
+\begin{DoxyCompactList}\small\item\em string in input file that signals that the parsing of reactions starts in the next line \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCRN_a7813e054c6e9ec84bc052a84c7ca2b11}{end\+\_\+signal}} = \char`\"{}end\char`\"{}
+\begin{DoxyCompactList}\small\item\em string in input file that signals that the parsing ends with this line \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCRN_addd46160b590b36ba15b6fb91f591758}{no\+\_\+constant\+\_\+signal}} = \char`\"{}-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em string in input file that signals that no reaction constant exists \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCRN_acea074d74a2269357d14c6f667649293}\label{classCRN_acea074d74a2269357d14c6f667649293}} 
+\index{C\+RN@{C\+RN}!C\+RN@{C\+RN}}
+\index{C\+RN@{C\+RN}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{C\+R\+N()}{CRN()}}
+{\footnotesize\ttfamily C\+R\+N\+::\+C\+RN (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::string \&}]{model\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+takes a filename of a text file containing all necessary information about the \mbox{\hyperlink{classCRN}{C\+RN}} and converts the input to processable state. for information on how the input file should look like, see the input\+\_\+example.\+txt file and the R\+E\+A\+D\+M\+E.\+txt file. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCRN_a122e6176bc12186e3d90c6d84cd6ce0c}\label{classCRN_a122e6176bc12186e3d90c6d84cd6ce0c}} 
+\index{C\+RN@{C\+RN}!print\+\_\+all@{print\+\_\+all}}
+\index{print\+\_\+all@{print\+\_\+all}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{print\+\_\+all()}{print\_all()}}
+{\footnotesize\ttfamily void C\+R\+N\+::print\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+prints raction rates, species, reactions and the stoichiometric matrix to stdout 
+
+\mbox{\Hypertarget{classCRN_a793a9a8490b0864d765b4ce87a3e3f35}\label{classCRN_a793a9a8490b0864d765b4ce87a3e3f35}} 
+\index{C\+RN@{C\+RN}!print\+\_\+r@{print\+\_\+r}}
+\index{print\+\_\+r@{print\+\_\+r}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{print\+\_\+r()}{print\_r()}}
+{\footnotesize\ttfamily void C\+R\+N\+::print\+\_\+r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+prints all reactions to stdout 
+
+\mbox{\Hypertarget{classCRN_a9ea712620fa755231213a59e4da33521}\label{classCRN_a9ea712620fa755231213a59e4da33521}} 
+\index{C\+RN@{C\+RN}!print\+\_\+rr@{print\+\_\+rr}}
+\index{print\+\_\+rr@{print\+\_\+rr}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{print\+\_\+rr()}{print\_rr()}}
+{\footnotesize\ttfamily void C\+R\+N\+::print\+\_\+rr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+prints all reaction rates to stdout 
+
+\mbox{\Hypertarget{classCRN_a04e77ebd0aab58d87a87555a308c9191}\label{classCRN_a04e77ebd0aab58d87a87555a308c9191}} 
+\index{C\+RN@{C\+RN}!print\+\_\+s@{print\+\_\+s}}
+\index{print\+\_\+s@{print\+\_\+s}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{print\+\_\+s()}{print\_s()}}
+{\footnotesize\ttfamily void C\+R\+N\+::print\+\_\+s (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+prints all species to stdout 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCRN_a7813e054c6e9ec84bc052a84c7ca2b11}\label{classCRN_a7813e054c6e9ec84bc052a84c7ca2b11}} 
+\index{C\+RN@{C\+RN}!end\+\_\+signal@{end\+\_\+signal}}
+\index{end\+\_\+signal@{end\+\_\+signal}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{end\+\_\+signal}{end\_signal}}
+{\footnotesize\ttfamily std\+::string C\+R\+N\+::end\+\_\+signal = \char`\"{}end\char`\"{}}
+
+
+
+string in input file that signals that the parsing ends with this line 
+
+\mbox{\Hypertarget{classCRN_a4ef4514e0ffba7b9358b37636a7f7fb4}\label{classCRN_a4ef4514e0ffba7b9358b37636a7f7fb4}} 
+\index{C\+RN@{C\+RN}!filename@{filename}}
+\index{filename@{filename}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily const std\+::string C\+R\+N\+::filename}
+
+
+
+name of the file containing all input information 
+
+\mbox{\Hypertarget{classCRN_a9ab0e43893870c6961fd0febafc99161}\label{classCRN_a9ab0e43893870c6961fd0febafc99161}} 
+\index{C\+RN@{C\+RN}!model\+\_\+name@{model\+\_\+name}}
+\index{model\+\_\+name@{model\+\_\+name}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{model\+\_\+name}{model\_name}}
+{\footnotesize\ttfamily const std\+::string C\+R\+N\+::model\+\_\+name}
+
+
+
+name of the crn model 
+
+this name will be used for marking the output data \mbox{\Hypertarget{classCRN_addd46160b590b36ba15b6fb91f591758}\label{classCRN_addd46160b590b36ba15b6fb91f591758}} 
+\index{C\+RN@{C\+RN}!no\+\_\+constant\+\_\+signal@{no\+\_\+constant\+\_\+signal}}
+\index{no\+\_\+constant\+\_\+signal@{no\+\_\+constant\+\_\+signal}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{no\+\_\+constant\+\_\+signal}{no\_constant\_signal}}
+{\footnotesize\ttfamily std\+::string C\+R\+N\+::no\+\_\+constant\+\_\+signal = \char`\"{}-\/\char`\"{}}
+
+
+
+string in input file that signals that no reaction constant exists 
+
+\mbox{\Hypertarget{classCRN_adb477d36059362ab2aa130af967275df}\label{classCRN_adb477d36059362ab2aa130af967275df}} 
+\index{C\+RN@{C\+RN}!number\+\_\+reaction\+\_\+rates@{number\+\_\+reaction\+\_\+rates}}
+\index{number\+\_\+reaction\+\_\+rates@{number\+\_\+reaction\+\_\+rates}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{number\+\_\+reaction\+\_\+rates}{number\_reaction\_rates}}
+{\footnotesize\ttfamily size\+\_\+t C\+R\+N\+::number\+\_\+reaction\+\_\+rates = 0}
+
+
+
+number of reaction rates 
+
+\mbox{\Hypertarget{classCRN_a3f77c4dcba31c3889bbb4635ef423940}\label{classCRN_a3f77c4dcba31c3889bbb4635ef423940}} 
+\index{C\+RN@{C\+RN}!number\+\_\+reactions@{number\+\_\+reactions}}
+\index{number\+\_\+reactions@{number\+\_\+reactions}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{number\+\_\+reactions}{number\_reactions}}
+{\footnotesize\ttfamily size\+\_\+t C\+R\+N\+::number\+\_\+reactions = 0}
+
+
+
+number of reactions 
+
+\mbox{\Hypertarget{classCRN_adbbcfed60a730f7d476678e3f0b2a843}\label{classCRN_adbbcfed60a730f7d476678e3f0b2a843}} 
+\index{C\+RN@{C\+RN}!number\+\_\+species@{number\+\_\+species}}
+\index{number\+\_\+species@{number\+\_\+species}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{number\+\_\+species}{number\_species}}
+{\footnotesize\ttfamily size\+\_\+t C\+R\+N\+::number\+\_\+species = 0}
+
+
+
+number of species 
+
+\mbox{\Hypertarget{classCRN_a3c02ee72c45eabb20591e0556e0b611e}\label{classCRN_a3c02ee72c45eabb20591e0556e0b611e}} 
+\index{C\+RN@{C\+RN}!reaction\+\_\+list@{reaction\+\_\+list}}
+\index{reaction\+\_\+list@{reaction\+\_\+list}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{reaction\+\_\+list}{reaction\_list}}
+{\footnotesize\ttfamily std\+::vector$<$Gi\+Na\+C\+::ex$>$ C\+R\+N\+::reaction\+\_\+list}
+
+
+
+list of all reactions 
+
+\mbox{\Hypertarget{classCRN_af6de0bba7b97843f9c95e4e849fa9543}\label{classCRN_af6de0bba7b97843f9c95e4e849fa9543}} 
+\index{C\+RN@{C\+RN}!reaction\+\_\+rate\+\_\+list@{reaction\+\_\+rate\+\_\+list}}
+\index{reaction\+\_\+rate\+\_\+list@{reaction\+\_\+rate\+\_\+list}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{reaction\+\_\+rate\+\_\+list}{reaction\_rate\_list}}
+{\footnotesize\ttfamily std\+::vector$<$Gi\+Na\+C\+::symbol$>$ C\+R\+N\+::reaction\+\_\+rate\+\_\+list}
+
+
+
+list of all reaction rates 
+
+\mbox{\Hypertarget{classCRN_a90756566693c70e08991c37c3ec21d38}\label{classCRN_a90756566693c70e08991c37c3ec21d38}} 
+\index{C\+RN@{C\+RN}!reaction\+\_\+rates\+\_\+signal@{reaction\+\_\+rates\+\_\+signal}}
+\index{reaction\+\_\+rates\+\_\+signal@{reaction\+\_\+rates\+\_\+signal}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{reaction\+\_\+rates\+\_\+signal}{reaction\_rates\_signal}}
+{\footnotesize\ttfamily std\+::string C\+R\+N\+::reaction\+\_\+rates\+\_\+signal = \char`\"{}reaction rates start\char`\"{}}
+
+
+
+string in input file that signals that the parsing of reaction rates starts in the next line 
+
+\mbox{\Hypertarget{classCRN_aa71d714d674ed916e9acc03b7c6163ef}\label{classCRN_aa71d714d674ed916e9acc03b7c6163ef}} 
+\index{C\+RN@{C\+RN}!reactions\+\_\+signal@{reactions\+\_\+signal}}
+\index{reactions\+\_\+signal@{reactions\+\_\+signal}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{reactions\+\_\+signal}{reactions\_signal}}
+{\footnotesize\ttfamily std\+::string C\+R\+N\+::reactions\+\_\+signal = \char`\"{}reactions start\char`\"{}}
+
+
+
+string in input file that signals that the parsing of reactions starts in the next line 
+
+\mbox{\Hypertarget{classCRN_ab1e7f09d6d0cf644190d36f14e689f49}\label{classCRN_ab1e7f09d6d0cf644190d36f14e689f49}} 
+\index{C\+RN@{C\+RN}!species\+\_\+list@{species\+\_\+list}}
+\index{species\+\_\+list@{species\+\_\+list}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{species\+\_\+list}{species\_list}}
+{\footnotesize\ttfamily std\+::vector$<$Gi\+Na\+C\+::symbol$>$ C\+R\+N\+::species\+\_\+list}
+
+
+
+list of all species 
+
+\mbox{\Hypertarget{classCRN_a47d1cac1fe4387b2b643ef2c6b6f5617}\label{classCRN_a47d1cac1fe4387b2b643ef2c6b6f5617}} 
+\index{C\+RN@{C\+RN}!species\+\_\+signal@{species\+\_\+signal}}
+\index{species\+\_\+signal@{species\+\_\+signal}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{species\+\_\+signal}{species\_signal}}
+{\footnotesize\ttfamily std\+::string C\+R\+N\+::species\+\_\+signal = \char`\"{}species start\char`\"{}}
+
+
+
+string in input file that signals that the parsing of species starts in the next line 
+
+\mbox{\Hypertarget{classCRN_a2fc9c358b31175f36e569bebcf6809b5}\label{classCRN_a2fc9c358b31175f36e569bebcf6809b5}} 
+\index{C\+RN@{C\+RN}!stoichiometric@{stoichiometric}}
+\index{stoichiometric@{stoichiometric}!C\+RN@{C\+RN}}
+\subsubsection{\texorpdfstring{stoichiometric}{stoichiometric}}
+{\footnotesize\ttfamily Gi\+Na\+C\+::matrix C\+R\+N\+::stoichiometric}
+
+
+
+stoichiometric matrix of the crn 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{crn_8hpp}{crn.\+hpp}}\item 
+\mbox{\hyperlink{crn_8cpp}{crn.\+cpp}}\end{DoxyCompactItemize}

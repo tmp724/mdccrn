@@ -1,0 +1,34 @@
+%% To be able to get parsed, the input must follow these rules:
+%% - each reaction rate/species/reaction should be written into one line
+%% - the set of reaction rates/species/reactions should be framed by a header and tailer as in the example below
+%% - the reactions should be framed with quotation marks
+%% - the reactions should have a space between every species, coefficient, '+' and reaction sign
+%% - after the reactions, the reaction rate symbol for the forward and backward reaction should be written in a second and third column, respectively
+
+%% reaction rates start
+kon1p
+kon2p
+kon3p
+kon2n
+kon3n
+koff1
+koff2
+koff3
+%% reaction rates end
+
+%% species start
+L
+R
+C1
+C2
+C3
+%% species end
+
+%% reactions start (reaction within quotation marks, forwarding and backwarding reaction constants after that, respectively)
+"L + R <=> C1"	kon1p	koff1
+"C1 => C2"	kon2p	kon2n
+"C2 => C3"	kon3p	kon3n
+"C2 => L + R"	koff2	-
+"C3 => L + R"	koff3	-
+%% reactions end
+
